@@ -12,13 +12,13 @@ public class ToDoListItemView extends CheckBox {
 	private Integer item;
 	
 	public void initlayout() {
-		/**
+
         final float scale = this.getResources().getDisplayMetrics().density;
         this.setPadding(this.getPaddingLeft() + (int)(15.0f * scale + 10.0f),
                 this.getPaddingTop(),
                 this.getPaddingRight(),
                 this.getPaddingBottom());
-        **/
+
 	}
 	
     public ToDoListItemView(Context context) {
