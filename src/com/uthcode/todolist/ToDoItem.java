@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.uthcode.todolist;
 
 public class ToDoItem {
     private final String mTask;

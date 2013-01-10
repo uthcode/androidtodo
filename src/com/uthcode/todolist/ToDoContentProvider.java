@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.uthcode.todolist;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -23,7 +23,7 @@ import android.text.TextUtils;
 public class ToDoContentProvider extends ContentProvider { // Abstracts the underlying data layer
     // Data path to the primary content.
     public static final Uri CONTENT_URI =
-            Uri.parse("content://com.example.todoprovider/todoitems");
+            Uri.parse("content://com.uthcode.todoprovider/todoitems");
 
     private static final int ALLROWS = 1;
     private static final int SINGLE_ROW = 2;
@@ -33,8 +33,8 @@ public class ToDoContentProvider extends ContentProvider { // Abstracts the unde
     // URI ending in 'todoitems/[rowID]' corresponds to a single row.
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI("com.example.todoprovider", "todoitems", ALLROWS);
-        uriMatcher.addURI("com.example.todoprovider", "todoitems/#", SINGLE_ROW);
+        uriMatcher.addURI("com.uthcode.todoprovider", "todoitems", ALLROWS);
+        uriMatcher.addURI("com.uthcode.todoprovider", "todoitems/#", SINGLE_ROW);
     }
 
     // Practice is to create a public field for each column in the table.
