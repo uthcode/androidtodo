@@ -32,3 +32,7 @@ Androidtodo.iml
 /.idea/libraries
 .DS_Store
 /build
+/app/build
+/app/.DS_Store
+
+
