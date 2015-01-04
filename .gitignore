@@ -24,3 +24,11 @@ local.properties
 out/
 Androidtodo.iml
 
+# Ignore these too.
+#
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
